@@ -1,0 +1,21 @@
+.details__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.details__item {
+  padding: 13px 19.5px 13px 19px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.details__icon {
+  width: 12px;
+  height: 12px;
+}

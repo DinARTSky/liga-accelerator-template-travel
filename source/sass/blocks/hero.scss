@@ -1,0 +1,84 @@
+.hero {
+  color: $color-default-white;
+}
+
+.hero__slider {
+  position: relative;
+}
+
+.hero__slide {
+  position: relative;
+  margin-top: 74px;
+  margin-bottom: 80px;
+}
+
+.hero__title {
+  font-size: 77px;
+  line-height: 77px;
+  width: 925px;
+  margin-bottom: 23px;
+}
+
+.hero__description {
+  margin: 0;
+  width: 460px;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 37px;
+}
+
+.hero__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 20.5px 34px 19.5px 34px;
+  margin-bottom: 134px;
+}
+
+.hero__decor {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.hero__decor--1 {
+  top: 129px;
+}
+
+.hero__decor--2 {
+  top: -13px;
+}
+
+.hero__decor--3 {
+  top: 226px;
+}
+
+.hero__decor-button {
+  background-color: transparent;
+  position: absolute;
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  top: 131px;
+  left: 213px;
+}
+
+.hero__decor-button-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__pagination {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 65px;
+  right: 0;
+}
+
+.hero__pagination-item {
+  width: 10px;
+  height: 10px;
+  border: 1px solid $color-default-white;
+  border-radius: 100px;
+}
