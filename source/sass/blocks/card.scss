@@ -1,0 +1,89 @@
+.card__image {
+  position: absolute;
+  z-index: -1;
+}
+
+.card__content {
+  color: $color-default-white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 416px;
+}
+
+.card__info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px
+}
+
+.card__place {
+  @include labeled;
+  gap: 6px;
+  background-color: $color-navy-blue;
+  padding: 6px 12px;
+}
+
+.card__icon-pin {
+  width: 16px;
+  height: 16px;
+}
+
+.card__period {
+  display: flex;
+  gap: 14px;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  width: 235px;
+}
+
+.card__line {
+  height: 1px;
+  width: 80px;
+  background-color: $color-default-white;
+  opacity: 0.2;
+}
+
+.card__days {
+  @include labeled;
+}
+
+.card__nights {
+  @include labeled;
+}
+
+.card__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__item-title {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 4px;
+}
+
+.card__item-text {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+  padding-top: 3px;
+}

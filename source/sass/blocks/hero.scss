@@ -8,8 +8,31 @@
 
 .hero__slide {
   position: relative;
-  margin-top: 74px;
-  margin-bottom: 80px;
+  padding-top: 200px;
+  padding-bottom: 80px;
+
+  @include vp-1439 {
+    padding-bottom: 187px;
+  }
+}
+
+.hero__image {
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
+  top: 0;
+}
+
+.hero__text {
+  @include vp-1439 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__title {
@@ -17,6 +40,13 @@
   line-height: 77px;
   width: 925px;
   margin-bottom: 23px;
+
+  @include vp-1439 {
+    font-size: 56px;
+    line-height: 56px;
+    width: 100%;
+    margin-bottom: 13px;
+  }
 }
 
 .hero__description {
@@ -25,6 +55,11 @@
   font-size: 17px;
   line-height: 24px;
   margin-bottom: 37px;
+
+  @include vp-1439 {
+    width: 500px;
+    margin-bottom: 27px;
+  }
 }
 
 .hero__btn {
@@ -33,24 +68,31 @@
   line-height: 16px;
   padding: 20.5px 34px 19.5px 34px;
   margin-bottom: 134px;
+
+  @include vp-1439 {
+    margin-bottom: 0;
+  }
+}
+
+.hero__details {
+  @include vp-1439 {
+    display: none;
+  }
 }
 
 .hero__decor {
   position: absolute;
-  right: 0;
+  right: 120px;
+  bottom: 154px;
   z-index: -1;
-}
 
-.hero__decor--1 {
-  top: 129px;
-}
-
-.hero__decor--2 {
-  top: -13px;
-}
-
-.hero__decor--3 {
-  top: 226px;
+  @include vp-1439 {
+    position: relative;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+  }
 }
 
 .hero__decor-button {
@@ -61,6 +103,11 @@
   height: 56px;
   top: 131px;
   left: 213px;
+
+  @include vp-1439 {
+    top: 122px;
+  left: 356px;
+  }
 }
 
 .hero__decor-button-icon {
@@ -68,17 +115,32 @@
   height: 100%;
 }
 
-.hero__pagination {
+.hero__slider .swiper-pagination {
+  text-align: right;
   display: flex;
-  gap: 20px;
-  position: absolute;
-  bottom: 65px;
-  right: 0;
+  gap: 12px;
+  justify-content: end;
+  bottom: 97px;
+  padding-right: 116px;
+
+  @include vp-1439 {
+    justify-content: center;
+    padding: 0;
+    bottom: 40px;
+  }
 }
 
-.hero__pagination-item {
+.hero__slider .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   border: 1px solid $color-default-white;
   border-radius: 100px;
+  background-color: transparent;
+  margin: 0;
+  opacity: 1;
+
+  &-active {
+    background-color: $color-default-white;
+  }
 }
+

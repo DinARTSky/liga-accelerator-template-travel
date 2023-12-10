@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1201,6 +1202,14 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+/* montserrat-300 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /* montserrat-regular - cyrillic_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -1224,6 +1233,14 @@ button.swiper-pagination-bullet {
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/montserrat-v26-cyrillic_latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v26-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-800 - cyrillic_latin */
 @font-face {
@@ -1446,12 +1463,7 @@ button,
 }
 @media (max-width: 1439px) {
   .container {
-    padding: 0 32px;
-  }
-}
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
+    padding: 0 45px;
   }
 }
 @media (max-width: 767px) {
@@ -2124,21 +2136,30 @@ button,
   color: #15ab07;
 }
 
-.header-hero__image {
-  position: absolute;
-  z-index: -1;
-  background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
-}
-
 .header {
   background-color: #0266c1;
   margin-left: 120px;
   margin-right: 120px;
   padding: 32px 20px;
+  position: absolute;
+  z-index: 2;
+}
+@media (max-width: 1439px) {
+  .header {
+    margin: 0;
+    padding: 20px 45px;
+    width: 100%;
+  }
 }
 
 .header__logo-container {
   padding: 10px 31px 10px 32px;
+}
+@media (max-width: 1439px) {
+  .header__logo-container {
+    padding: 0;
+    margin: auto;
+  }
 }
 
 .navigation {
@@ -2152,9 +2173,32 @@ button,
           align-items: center;
   color: #ffffff;
 }
+@media (max-width: 1439px) {
+  .navigation {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 .navigation__toggle {
   display: none;
+  padding: 0;
+}
+@media (max-width: 1439px) {
+  .navigation__toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 1439px) {
+  .navigation__icon {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .navigation__list {
@@ -2164,6 +2208,11 @@ button,
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 1px;
+}
+@media (max-width: 1439px) {
+  .navigation__list {
+    display: none;
+  }
 }
 
 .navigation__item:nth-child(2) {
@@ -2196,6 +2245,13 @@ button,
   line-height: 18px;
   margin-top: 3px;
 }
+@media (max-width: 1439px) {
+  .navigation__phone {
+    text-align: right;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
 
 .title {
   font-weight: 800;
@@ -2214,8 +2270,39 @@ button,
 
 .hero__slide {
   position: relative;
-  margin-top: 74px;
-  margin-bottom: 80px;
+  padding-top: 200px;
+  padding-bottom: 80px;
+}
+@media (max-width: 1439px) {
+  .hero__slide {
+    padding-bottom: 187px;
+  }
+}
+
+.hero__image {
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
+  top: 0;
+}
+
+@media (max-width: 1439px) {
+  .hero__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__title {
@@ -2223,6 +2310,14 @@ button,
   line-height: 77px;
   width: 925px;
   margin-bottom: 23px;
+}
+@media (max-width: 1439px) {
+  .hero__title {
+    font-size: 56px;
+    line-height: 56px;
+    width: 100%;
+    margin-bottom: 13px;
+  }
 }
 
 .hero__description {
@@ -2232,6 +2327,12 @@ button,
   line-height: 24px;
   margin-bottom: 37px;
 }
+@media (max-width: 1439px) {
+  .hero__description {
+    width: 500px;
+    margin-bottom: 27px;
+  }
+}
 
 .hero__btn {
   font-weight: 500;
@@ -2240,23 +2341,36 @@ button,
   padding: 20.5px 34px 19.5px 34px;
   margin-bottom: 134px;
 }
+@media (max-width: 1439px) {
+  .hero__btn {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1439px) {
+  .hero__details {
+    display: none;
+  }
+}
 
 .hero__decor {
   position: absolute;
-  right: 0;
+  right: 120px;
+  bottom: 154px;
   z-index: -1;
 }
-
-.hero__decor--1 {
-  top: 129px;
-}
-
-.hero__decor--2 {
-  top: -13px;
-}
-
-.hero__decor--3 {
-  top: 226px;
+@media (max-width: 1439px) {
+  .hero__decor {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .hero__decor-button {
@@ -2268,27 +2382,51 @@ button,
   top: 131px;
   left: 213px;
 }
+@media (max-width: 1439px) {
+  .hero__decor-button {
+    top: 122px;
+    left: 356px;
+  }
+}
 
 .hero__decor-button-icon {
   width: 100%;
   height: 100%;
 }
 
-.hero__pagination {
+.hero__slider .swiper-pagination {
+  text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
-  position: absolute;
-  bottom: 65px;
-  right: 0;
+  gap: 12px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  bottom: 97px;
+  padding-right: 116px;
+}
+@media (max-width: 1439px) {
+  .hero__slider .swiper-pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    bottom: 40px;
+  }
 }
 
-.hero__pagination-item {
+.hero__slider .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   border: 1px solid #ffffff;
   border-radius: 100px;
+  background-color: transparent;
+  margin: 0;
+  opacity: 1;
+}
+.hero__slider .swiper-pagination-bullet-active {
+  background-color: #ffffff;
 }
 
 .details__list {
@@ -2319,6 +2457,267 @@ button,
 .details__icon {
   width: 12px;
   height: 12px;
+}
+
+.tours {
+  padding-top: 103px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1439px) {
+  .tours {
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+}
+
+.tours__title-arrows {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  margin-bottom: 50px;
+}
+@media (max-width: 1439px) {
+  .tours__title-arrows {
+    margin-bottom: 22px;
+  }
+}
+
+.tours__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-top: 20px;
+}
+
+.tours__title::after {
+  content: "Ближайшие туры";
+  font-size: 55px;
+  line-height: 55px;
+  opacity: 0.03;
+  position: absolute;
+  top: 3px;
+}
+
+.tours__arrows {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 4px;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 1439px) {
+  .tours__slide:nth-last-child(1) {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+  }
+}
+
+.tours__button {
+  width: 37px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0266c1;
+}
+
+.swiper-button-disabled.tours__button {
+  background-color: #999999;
+}
+
+.tours__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tours__link {
+  color: #2d383f;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 11px;
+  background-color: transparent;
+}
+
+.tours__icon-more {
+  width: 9px;
+  height: 14px;
+}
+
+.tours .swiper {
+  margin-bottom: 43px;
+}
+@media (max-width: 1439px) {
+  .tours .swiper {
+    margin-bottom: 20px;
+  }
+}
+
+.card__image {
+  position: absolute;
+  z-index: -1;
+}
+
+.card__content {
+  color: #ffffff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  height: 416px;
+}
+
+.card__info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.card__place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  gap: 6px;
+  background-color: #0266c1;
+  padding: 6px 12px;
+}
+
+.card__icon-pin {
+  width: 16px;
+  height: 16px;
+}
+
+.card__period {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  width: 235px;
+}
+
+.card__line {
+  height: 1px;
+  width: 80px;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+.card__days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.card__nights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.card__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.card__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__item-title {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 4px;
+}
+
+.card__item-text {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+  padding-top: 3px;
 }
 
 /* @mixin hover-focus {

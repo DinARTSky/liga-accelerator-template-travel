@@ -11,24 +11,21 @@
   <body>
     <div class="wrapper">
       <div class="header-hero">
-        <div class="header-hero__image">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/hero-desktop.jpg" width="1440" height="800">
-              <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
-              <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
-            </picture>
-        </div>
         <header class="header">
-          <nav class="navigation container">
-            <button class="navigation__toggle" type="button">
+          <nav class="navigation">
+            <button class="btn navigation__toggle" type="button">
               <span class="visually-hidden">Открыть/Закрыть меню</span>
+              <svg class="navigation__icon" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+              </svg>
             </button>
 
             <div class="header__logo-container">
               <a class="logo" href="index.html" aria-current="page">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+                  <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg">
+                  <source media="(min-width: 1024px)" srcset="img/svg/logo-tablet-1024.svg">
+                  <source media="(min-width: 768px)" srcset="img/svg/logo-tablet-1024.svg">
                   <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
                 </picture>
               </a>
@@ -42,7 +39,7 @@
                 <a class="navigation__link" href="study.html">Обучение</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#about">О нас</a>
+                <a class="navigation__link" href="#about">О нас</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#feedback">Отзывы</a>
@@ -54,10 +51,10 @@
                 <a class="navigation__link" href="#contacts">Контакты</a>
               </li>
             </ul>
-            <span class="navigation__phone">8 800 725-32-32</span>
+            <span class="navigation__phone">8 800 725-32-32</span>
           </nav>
         </header>
-        <section class="hero container">
+        <section class="hero">
           <!-- Slider main container -->
           <div class="swiper hero__slider">
             <!-- Additional required wrapper -->
@@ -66,31 +63,40 @@
               <!-- Slides -->
               <!--Первый слайд-->
               <div class="swiper-slide hero__slide">
-                <h1 class="title hero__title">Захватывающие вершины Кавказа</h1>
-                <p class="hero__description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-                <a class="btn hero__btn">Смотреть тур</a>
-
-                <div class="hero__details details">
-                  <ul class="details__list list-reset">
-                    <li class="details__item">
-                      <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                        <use xlink:href="img/sprite.svg#icon-moon"></use>
-                      </svg>
-                      <span>6 дней/5 ночей</span>
-                    </li>
-                    <li class="details__item">
-                      <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                        <use xlink:href="img/sprite.svg#icon-level"></use>
-                      </svg>
-                      <span>Высокая сложность</span>
-                    </li>
-                  </ul>
+                <div class="hero__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/hero-desktop-1.jpg" width="1440" height="800">
+                    <source media="(min-width: 1024px)" srcset="img/hero-tablet-1024-1.jpg" width="1440" height="800">
+                    <source media="(min-width: 768px)" srcset="img/hero-tablet-768-1.jpg" width="768" height="1024">
+                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                  </picture>
                 </div>
+                <div class="hero__text container">
+                  <h1 class="title hero__title">Захватывающие вершины Кавказа</h1>
+                  <p class="hero__description">В сопровождении опытных гидов вы пройдёте через&nbsp;потрясающие ландшафты и совершите восход на&nbsp;вершину горы Чегет.</p>
+                  <a class="btn hero__btn">Смотреть тур</a>
 
-                <div class="hero__decor hero__decor--1">
+                  <div class="hero__details details">
+                    <ul class="details__list list-reset">
+                      <li class="details__item">
+                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <span>6 дней/5 ночей</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-hero-level"></use>
+                        </svg>
+                        <span>Высокая сложность</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="hero__decor">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/video-desktop.jpg" width="482" height="317">
-                    <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+                    <source media="(min-width: 768px)" srcset="img/video-tablet.jpg" width="442" height="300">
                     <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
                   </picture>
                   <button class="btn hero__decor-button">
@@ -103,60 +109,77 @@
 
               <!--Второй слайд-->
               <div class="swiper-slide hero__slide">
-                <h1 class="title hero__title">Невероятная природа Камчатки</h1>
-                <p class="hero__description">Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                <a class="btn hero__btn">Смотреть тур</a>
-
-                <div class="hero__details details">
-                  <ul class="details__list list-reset">
-                    <li class="details__item">
-                      <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                        <use xlink:href="img/sprite.svg#icon-moon"></use>
-                      </svg>
-                      <span>9 дней/10 ночей</span>
-                    </li>
-                    <li class="details__item">
-                      <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                        <use xlink:href="img/sprite.svg#icon-level"></use>
-                      </svg>
-                      <span>Средняя сложность</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="hero__decor hero__decor--2">
+                <div class="hero__image">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/cards-desktop.png" width="410" height="459">
+                    <source media="(min-width: 1440px)" srcset="img/hero-desktop-2.jpg" width="1440" height="800">
+                    <source media="(min-width: 1024px)" srcset="img/hero-desktop-2.jpg" width="1440" height="800">
                     <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
                     <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
                   </picture>
+                </div>
+                <div class="hero__text container">
+                  <h1 class="title hero__title">Невероятная природа Камчатки</h1>
+                  <p class="hero__description">Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                  <a class="btn hero__btn">Смотреть тур</a>
+                  <div class="hero__details details">
+                    <ul class="details__list list-reset">
+                      <li class="details__item">
+                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <span>9 дней/10 ночей</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-level"></use>
+                        </svg>
+                        <span>Средняя сложность</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="hero__decor">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/cards-desktop.png" width="410" height="459">
+                      <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+                      <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                    </picture>
+                  </div>
                 </div>
               </div>
 
               <!--Третий слайд-->
               <div class="swiper-slide hero__slide">
-                <h1 class="title hero__title">Магические пейзажи Алтайского Края</h1>
-                <p class="hero__description">Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-                <a class="btn hero__btn">Смотреть тур</a>
+                <div class="hero__image">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/hero-desktop-3.jpg" width="1440" height="800">
+                    <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                  </picture>
+                </div>
+                <div class="hero__text container">
+                  <h1 class="title hero__title">Магические пейзажи Алтайского Края</h1>
+                  <p class="hero__description">Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                  <a class="btn hero__btn">Смотреть тур</a>
 
-                <div class="hero__details details">
-                  <ul class="details__list list-reset">
-                    <li class="details__item">
-                      <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                        <use xlink:href="img/sprite.svg#icon-moon"></use>
-                      </svg>
-                      <span>8 дней/7 ночей</span>
-                    </li>
-                    <li class="details__item">
-                      <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                        <use xlink:href="img/sprite.svg#icon-level"></use>
-                      </svg>
-                      <span>Лёгкая сложность</span>
-                    </li>
-                  </ul>
+                  <div class="hero__details details">
+                    <ul class="details__list list-reset">
+                      <li class="details__item">
+                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <span>8 дней/7 ночей</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-hero-level"></use>
+                        </svg>
+                        <span>Лёгкая сложность</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="hero__decor hero__decor--3">
+                <div class="hero__decor">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/player-desktop.jpg" width="340" height="220">
                     <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
@@ -168,25 +191,284 @@
 
 
               <!-- If we need pagination -->
-              <div class="swiper-pagination">
-                <ul class="hero__pagination list-reset">
-                  <li class="hero__pagination-item">
-                    <a class="hero__pagination-link"></a>
-                  </li>
-                  <li class="hero__pagination-item">
-                    <a class="hero__pagination-link"></a>
-                  </li>
-                  <li class="hero__pagination-item">
-                    <a class="hero__pagination-link"></a>
-                  </li>
-                </ul>
+              <div class="hero__pagination swiper-pagination"></div>
+          </div>
+        </section>
+      </div>
 
+      <!--Секция Ближайшие туры-->
+      <section class="tours container">
+
+        <!-- Slider main container -->
+        <div class="swiper swiper-tours">
+          <div class="tours__title-arrows">
+            <h2 class="title tours__title">Ближайшие туры</h2>
+            <!-- If we need navigation buttons -->
+            <div class="tours__arrows">
+              <div class="tours__button tours__button--prev">
+                <svg aria-hidden="true" focusable="false" width="14" height="11">
+                  <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                </svg>
               </div>
+              <div class="tours__button tours__button--next">
+                <svg aria-hidden="true" focusable="false" width="14" height="11">
+                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </div>
+            </div>
           </div>
 
-        </section>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!--Нулевой слайд-->
+            <div class="swiper-slide tours__slide">
+              <div class="tours__card card">
+                <div class="card__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/elbrus-desktop.jpg" width="380" height="416">
+                    <source media="(min-width: 768px)" srcset="img/elbrus-tablet.jpg" width="330" height="416">
+                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                  </picture>
+                </div>
+                <div class="card__content">
+                  <!--Верхняя строчка карточки с локацией и сроком-->
+                  <div class="card__info">
+                    <!--Локация с иконкой-->
+                    <div class="card__place">
+                      <svg aria-hidden="true" focusable="false" width="16" height="16">
+                        <use xlink:href="img/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <span class="card__info-text">Кавказ</span>
+                    </div>
+                    <div class="card__period">
+                      <div class="card__days">
+                        <svg aria-hidden="true" focusable="false" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <span class="card__info-text">4 дня</span>
+                      </div>
+                      <div class="card__nights">
+                        <svg aria-hidden="true" focusable="false" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <span class="card__info-text">3 ночи</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Заголовок карточки-->
+                  <h3 class="title card__title">Путешествие вокруг Эльбруса</h3>
+                  <!--Разделительная линия-->
+                  <div class="card__line"></div>
+                  <!--Нижняя строчка карточки сложность, даты, группы-->
+                  <ul class="card__details list-reset">
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Сложность:</h4>
+                      <svg aria-hidden="true" focusable="false" width="84" height="16">
+                        <use xlink:href="img/sprite.svg#icon-card-level-4"></use>
+                      </svg>
+                    </li>
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Даты набора:</h4>
+                      <span class="card__item-text">12.06–19.06</span>
+                    </li>
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Группа:</h4>
+                      <span class="card__item-text">до 15 чел.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--Первый слайд-->
+            <div class="swiper-slide tours__slide">
+              <div class="tours__card card">
+                <div class="card__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/elbrus-desktop.jpg" width="380" height="416">
+                    <source media="(min-width: 768px)" srcset="img/elbrus-tablet.jpg" width="330" height="416">
+                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                  </picture>
+                </div>
+                <div class="card__content">
+                  <!--Верхняя строчка карточки с локацией и сроком-->
+                  <div class="card__info">
+                    <!--Локация с иконкой-->
+                    <div class="card__place">
+                      <svg aria-hidden="true" focusable="false" width="16" height="16">
+                        <use xlink:href="img/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <span class="card__info-text">Кавказ</span>
+                    </div>
+                    <div class="card__period">
+                      <div class="card__days">
+                        <svg aria-hidden="true" focusable="false" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <span class="card__info-text">4 дня</span>
+                      </div>
+                      <div class="card__nights">
+                        <svg aria-hidden="true" focusable="false" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <span class="card__info-text">3 ночи</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Заголовок карточки-->
+                  <h3 class="title card__title">Путешествие вокруг Эльбруса</h3>
+                  <!--Разделительная линия-->
+                  <div class="card__line"></div>
+                  <!--Нижняя строчка карточки сложность, даты, группы-->
+                  <ul class="card__details list-reset">
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Сложность:</h4>
+                      <svg aria-hidden="true" focusable="false" width="84" height="16">
+                        <use xlink:href="img/sprite.svg#icon-card-level-4"></use>
+                      </svg>
+                    </li>
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Даты набора:</h4>
+                      <span class="card__item-text">12.06–19.06</span>
+                    </li>
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Группа:</h4>
+                      <span class="card__item-text">до 15 чел.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--Второй слайд-->
+            <div class="swiper-slide tours__slide">
+              <div class="tours__card card">
+                <div class="card__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/beluha-desktop.jpg" width="380" height="416">
+                    <source media="(min-width: 768px)" srcset="img/beluha-tablet.jpg">
+                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="330" height="416">
+                  </picture>
+                </div>
+                <div class="card__content">
+                  <!--Верхняя строчка карточки с локацией и сроком-->
+                  <div class="card__info">
+                    <!--Локация с иконкой-->
+                    <div class="card__place">
+                      <svg aria-hidden="true" focusable="false" width="16" height="16">
+                        <use xlink:href="img/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <span class="card__info-text">Алтай</span>
+                    </div>
+                    <div class="card__period">
+                      <div class="card__days">
+                        <svg aria-hidden="true" focusable="false" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <span class="card__info-text">14 дней</span>
+                      </div>
+                      <div class="card__nights">
+                        <svg aria-hidden="true" focusable="false" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <span class="card__info-text">13 ночей</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Заголовок карточки-->
+                  <h3 class="title card__title">Путь к подножию Белухи</h3>
+                   <!--Разделительная линия-->
+                   <div class="card__line"></div>
+                  <!--Нижняя строчка карточки сложность, даты, группы-->
+                  <ul class="card__details list-reset">
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Сложность:</h4>
+                      <svg aria-hidden="true" focusable="false" width="84" height="16">
+                        <use xlink:href="img/sprite.svg#icon-card-level-3"></use>
+                      </svg>
+                    </li>
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Даты набора:</h4>
+                      <span class="card__item-text">14.06–23.06</span>
+                    </li>
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Группа:</h4>
+                      <span class="card__item-text">до 25 чел.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--Третий слайд-->
+            <div class="swiper-slide tours__slide">
+              <div class="tours__card card">
+                <div class="card__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/fisht-desktop.jpg" width="380" height="416">
+                    <source media="(min-width: 768px)" srcset="img/fisht-tablet.jpg">
+                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="330" height="416">
+                  </picture>
+                </div>
+                <div class="card__content">
+                  <!--Верхняя строчка карточки с локацией и сроком-->
+                  <div class="card__info">
+                    <!--Локация с иконкой-->
+                    <div class="card__place">
+                      <svg aria-hidden="true" focusable="false" width="16" height="16">
+                        <use xlink:href="img/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <span class="card__info-text">Адыгея</span>
+                    </div>
+                    <div class="card__period">
+                      <div class="card__days">
+                        <svg aria-hidden="true" focusable="false" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        <span class="card__info-text">7 дней</span>
+                      </div>
+                      <div class="card__nights">
+                        <svg aria-hidden="true" focusable="false" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <span class="card__info-text">6 ночей</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Заголовок карточки-->
+                  <h3 class="title card__title">Через Фишт к&nbsp;Чёрному морю и обратно</h3>
+                   <!--Разделительная линия-->
+                   <div class="card__line"></div>
+                  <!--Нижняя строчка карточки сложность, даты, группы-->
+                  <ul class="card__details list-reset">
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Сложность:</h4>
+                      <svg aria-hidden="true" focusable="false" width="84" height="16">
+                        <use xlink:href="img/sprite.svg#icon-card-level-4"></use>
+                      </svg>
+                    </li>
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Даты набора:</h4>
+                      <span class="card__item-text">15.07–19.07</span>
+                    </li>
+                    <li class="card__item">
+                      <h4 class="title card__item-title">Группа:</h4>
+                      <span class="card__item-text">до 22 чел.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      </div>
+        </div>
+        <div class="tours__more">
+          <button class="btn tours__link">
+            <span>Показать все туры</span>
+            <svg class="tours__icon-more" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#icon-more"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
       <main>
         <section class="intro">
           <div class="container">

@@ -74,6 +74,12 @@
   }
 }
 
+@mixin labeled {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 // Mobile first
 
 // @mixin vp-375 {

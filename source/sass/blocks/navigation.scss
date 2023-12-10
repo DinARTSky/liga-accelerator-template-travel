@@ -4,10 +4,27 @@
   gap: 79px;
   align-items: center;
   color: $color-default-white;
+
+  @include vp-1439 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .navigation__toggle {
   display: none;
+  padding: 0;
+
+  @include vp-1439 {
+    display: flex;
+  }
+}
+
+.navigation__icon {
+  @include vp-1439 {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .navigation__list {
@@ -15,6 +32,10 @@
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 1px;
+
+  @include vp-1439 {
+    display: none;
+  }
 }
 
 .navigation__item:nth-child(2) {
@@ -46,4 +67,10 @@
   font-size: 18px;
   line-height: 18px;
   margin-top: 3px;
+
+  @include vp-1439 {
+    text-align: right;
+    font-size: 16px;
+  line-height: 16px;
+  }
 }

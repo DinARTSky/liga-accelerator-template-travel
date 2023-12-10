@@ -1,0 +1,96 @@
+.tours {
+  padding-top: 103px;
+  padding-bottom: 100px;
+
+  @include vp-1439 {
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+}
+
+.tours__title-arrows {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 50px;
+
+  @include vp-1439 {
+    margin-bottom: 22px;
+  }
+}
+
+.tours__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-top: 20px;
+}
+
+.tours__title::after {
+  content: 'Ближайшие туры';
+  font-size: 55px;
+  line-height: 55px;
+  opacity: 0.03;
+  position: absolute;
+  top: 3px;
+}
+
+.tours__arrows {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 4px;
+  margin-bottom: 3px;
+}
+
+.tours__slide {
+  @include vp-1439 {
+    &:nth-last-child(1) {
+      order: -2;
+    }
+  }
+}
+
+.tours__button {
+  width: 37px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-navy-blue;
+}
+
+.swiper-button-disabled.tours__button {
+  background-color: #999999;
+}
+
+.tours__more {
+  display: flex;
+  justify-content: center;
+}
+
+.tours__link {
+  color: $color-default-black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background-color: transparent;
+}
+
+.tours__icon-more {
+  width: 9px;
+  height: 14px;
+}
+
+.tours .swiper {
+  margin-bottom: 43px;
+
+  @include vp-1439 {
+    margin-bottom: 20px;
+  }
+}
