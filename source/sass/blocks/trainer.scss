@@ -1,0 +1,36 @@
+.trainer__image {
+  margin-bottom: 16px;
+}
+
+.trainer__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 14px;
+}
+
+.trainer__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.trainer__vk {
+  display: flex;
+  justify-content: end;
+  margin-top: -1px;
+}
+
+.trainer__link {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+}
+
+.trainer__description {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}

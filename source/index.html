@@ -24,9 +24,8 @@
               <a class="logo" href="index.html" aria-current="page">
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg">
-                  <source media="(min-width: 1024px)" srcset="img/svg/logo-tablet-1024.svg">
                   <source media="(min-width: 768px)" srcset="img/svg/logo-tablet-1024.svg">
-                  <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                  <img class="logo__image" src="img/svg/logo-mobile.svg" alt="логотип" width="142" height="42">
                 </picture>
               </a>
             </div>
@@ -36,7 +35,7 @@
                 <a class="navigation__link" href="tours.html">Туры</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="study.html">Обучение</a>
+                <a class="navigation__link" href="training.html">Обучение</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#about">О нас</a>
@@ -66,44 +65,45 @@
                 <div class="hero__image">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/hero-desktop-1.jpg" width="1440" height="800">
-                    <source media="(min-width: 1024px)" srcset="img/hero-tablet-1024-1.jpg" width="1440" height="800">
-                    <source media="(min-width: 768px)" srcset="img/hero-tablet-768-1.jpg" width="768" height="1024">
-                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                    <source media="(min-width: 768px)" srcset="img/hero-tablet-1.jpg" width="768" height="1024">
+                    <img class="logo__image" src="img/hero-mobile-1.jpg" alt="Фото гор Кавказа" width="350" height="568">
                   </picture>
                 </div>
-                <div class="hero__text container">
-                  <h1 class="title hero__title">Захватывающие вершины Кавказа</h1>
-                  <p class="hero__description">В сопровождении опытных гидов вы пройдёте через&nbsp;потрясающие ландшафты и совершите восход на&nbsp;вершину горы Чегет.</p>
-                  <a class="btn hero__btn">Смотреть тур</a>
+                <div class="hero__container container">
+                  <div class="hero__text">
+                    <h1 class="title hero__title">Захватывающие вершины Кавказа</h1>
+                    <p class="hero__description">В сопровождении опытных гидов вы пройдёте через&nbsp;потрясающие ландшафты и совершите восход на&nbsp;вершину горы Чегет.</p>
+                    <a class="btn hero__btn">Смотреть тур</a>
 
-                  <div class="hero__details details">
-                    <ul class="details__list list-reset">
-                      <li class="details__item">
-                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                          <use xlink:href="img/sprite.svg#icon-moon"></use>
-                        </svg>
-                        <span>6 дней/5 ночей</span>
-                      </li>
-                      <li class="details__item">
-                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                          <use xlink:href="img/sprite.svg#icon-hero-level"></use>
-                        </svg>
-                        <span>Высокая сложность</span>
-                      </li>
-                    </ul>
+                    <div class="hero__details details">
+                      <ul class="details__list list-reset">
+                        <li class="details__item">
+                          <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                            <use xlink:href="img/sprite.svg#icon-moon"></use>
+                          </svg>
+                          <span>6 дней/5 ночей</span>
+                        </li>
+                        <li class="details__item">
+                          <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                            <use xlink:href="img/sprite.svg#icon-hero-level"></use>
+                          </svg>
+                          <span>Высокая сложность</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="hero__decor">
-                  <picture>
-                    <source media="(min-width: 1440px)" srcset="img/video-desktop.jpg" width="482" height="317">
-                    <source media="(min-width: 768px)" srcset="img/video-tablet.jpg" width="442" height="300">
-                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
-                  </picture>
-                  <button class="btn hero__decor-button">
-                    <svg class="hero__decor-button-icon" aria-hidden="true" focusable="false" width="18" height="18">
-                      <use xlink:href="img/sprite.svg#decor-button-icon"></use>
-                    </svg>
-                  </button>
+                  <div class="hero__decor">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/video-desktop.jpg" width="482" height="317">
+                      <source media="(min-width: 768px)" srcset="img/video-tablet.jpg" width="442" height="300">
+                      <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                    </picture>
+                    <button class="btn hero__decor-button">
+                      <svg class="hero__decor-button-icon" aria-hidden="true" focusable="false" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#decor-button-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
 
@@ -112,35 +112,37 @@
                 <div class="hero__image">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/hero-desktop-2.jpg" width="1440" height="800">
-                    <source media="(min-width: 1024px)" srcset="img/hero-desktop-2.jpg" width="1440" height="800">
-                    <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
-                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                    <source media="(min-width: 768px)" srcset="img/hero-tablet-2.jpg" width="768" height="1024">
+                    <img class="logo__image" src="img/hero-mobile-2.jpg" alt="Фото гор Камчатки" width="350" height="568">
                   </picture>
                 </div>
-                <div class="hero__text container">
-                  <h1 class="title hero__title">Невероятная природа Камчатки</h1>
-                  <p class="hero__description">Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                  <a class="btn hero__btn">Смотреть тур</a>
-                  <div class="hero__details details">
-                    <ul class="details__list list-reset">
-                      <li class="details__item">
-                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                          <use xlink:href="img/sprite.svg#icon-moon"></use>
-                        </svg>
-                        <span>9 дней/10 ночей</span>
-                      </li>
-                      <li class="details__item">
-                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                          <use xlink:href="img/sprite.svg#icon-level"></use>
-                        </svg>
-                        <span>Средняя сложность</span>
-                      </li>
-                    </ul>
+                <div class="hero__container container">
+                  <div class="hero__text">
+                    <h1 class="title hero__title">Невероятная природа Камчатки</h1>
+                    <p class="hero__description">Незабываемое приключение, во время которого вы&nbsp;отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                    <a class="btn hero__btn">Смотреть тур</a>
+
+                    <div class="hero__details details">
+                      <ul class="details__list list-reset">
+                        <li class="details__item">
+                          <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                            <use xlink:href="img/sprite.svg#icon-moon"></use>
+                          </svg>
+                          <span>9 дней/10 ночей</span>
+                        </li>
+                        <li class="details__item">
+                          <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                            <use xlink:href="img/sprite.svg#icon-hero-level"></use>
+                          </svg>
+                          <span>Средняя сложность</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                   <div class="hero__decor">
                     <picture>
                       <source media="(min-width: 1440px)" srcset="img/cards-desktop.png" width="410" height="459">
-                      <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+                      <source media="(min-width: 768px)" srcset="img/cards-tablet.png" width="442" height="366">
                       <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
                     </picture>
                   </div>
@@ -152,46 +154,45 @@
                 <div class="hero__image">
                   <picture>
                     <source media="(min-width: 1150px)" srcset="img/hero-desktop-3.jpg" width="1440" height="800">
-                    <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
-                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                    <source media="(min-width: 768px)" srcset="img/hero-tablet-3.jpg" width="768" height="1024">
+                    <img class="logo__image" src="img/hero-mobile-3.jpg" alt="Фото гор Камчатки" width="350" height="568">
                   </picture>
                 </div>
-                <div class="hero__text container">
-                  <h1 class="title hero__title">Магические пейзажи Алтайского Края</h1>
-                  <p class="hero__description">Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-                  <a class="btn hero__btn">Смотреть тур</a>
+                <div class="hero__container container">
+                  <div class="hero__text">
+                    <h1 class="title hero__title">Магические пейзажи Алтайского Края</h1>
+                    <p class="hero__description">Алтайский трекинг-тур — это захватывающее приключение с посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                    <a class="btn hero__btn">Смотреть тур</a>
 
-                  <div class="hero__details details">
-                    <ul class="details__list list-reset">
-                      <li class="details__item">
-                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                          <use xlink:href="img/sprite.svg#icon-moon"></use>
-                        </svg>
-                        <span>8 дней/7 ночей</span>
-                      </li>
-                      <li class="details__item">
-                        <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
-                          <use xlink:href="img/sprite.svg#icon-hero-level"></use>
-                        </svg>
-                        <span>Лёгкая сложность</span>
-                      </li>
-                    </ul>
+                    <div class="hero__details details">
+                      <ul class="details__list list-reset">
+                        <li class="details__item">
+                          <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                            <use xlink:href="img/sprite.svg#icon-moon"></use>
+                          </svg>
+                          <span>8 дней/7 ночей</span>
+                        </li>
+                        <li class="details__item">
+                          <svg class="details__icon" aria-hidden="true" focusable="false" width="18" height="18">
+                            <use xlink:href="img/sprite.svg#icon-hero-level"></use>
+                          </svg>
+                          <span>Лёгкая сложность</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-
-                <div class="hero__decor">
-                  <picture>
-                    <source media="(min-width: 1440px)" srcset="img/player-desktop.jpg" width="340" height="220">
-                    <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
-                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
-                  </picture>
+                  <div class="hero__decor">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/pleer-desktop.jpg" width="340" height="220">
+                      <source media="(min-width: 768px)" srcset="img/pleer-tablet.jpg" width="340" height="220">
+                      <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                    </picture>
+                  </div>
                 </div>
               </div>
             </div>
-
-
-              <!-- If we need pagination -->
-              <div class="hero__pagination swiper-pagination"></div>
+            <!-- If we need pagination -->
+            <div class="hero__pagination swiper-pagination"></div>
           </div>
         </section>
       </div>
@@ -287,7 +288,7 @@
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/elbrus-desktop.jpg" width="380" height="416">
                     <source media="(min-width: 768px)" srcset="img/elbrus-tablet.jpg" width="330" height="416">
-                    <img class="logo__image" src="img/svg/logo-desktop.svg" alt="логотип" width="142" height="42">
+                    <img class="logo__image" src="img/elbrus-mobile.jpg" alt="Фото Эльбруса" width="320" height="416">
                   </picture>
                 </div>
                 <div class="card__content">
@@ -468,6 +469,331 @@
             </svg>
           </button>
         </div>
+      </section>
+
+      <!--Секция обучение-->
+      <section class="training">
+        <!--Фон горы и облака-->
+        <div class="training__clouds">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/clouds-desktop.png" width="602" height="1630">
+            <source media="(min-width: 768px)" srcset="img/clouds-tablet.png" width="602" height="1364">
+            <img class="logo__image" src="img/clouds-mobile.png" alt="Фон облака и горы" width="171" height="595">
+          </picture>
+        </div>
+        <!--Облака2-->
+        <div class="training__clouds-2">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/clouds-desktop-2.png" width="840" height="280">
+            <source media="(min-width: 768px)" srcset="img/clouds-tablet.png" width="602" height="1364">
+            <img class="logo__image" src="img/clouds-mobile.png" alt="Фон облака и горы" width="171" height="595">
+          </picture>
+        </div>
+
+        <div class="training__wrapper container">
+          <h2 class="title training__title">Обучение</h2>
+          <p class="training__description">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+
+          <!--Слайдер Наши Инструкторы-->
+          <!-- Slider main container -->
+          <div class="swiper training__trainers trainers">
+            <div class="trainers__title-arrows">
+              <h2 class="title trainers__title">Наши инструкторы</h2>
+              <!-- If we need navigation buttons -->
+              <div class="trainers__arrows">
+                <div class="trainers__button trainers__button--prev">
+                  <svg aria-hidden="true" focusable="false" width="14" height="11">
+                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                  </svg>
+                </div>
+                <div class="trainers__button trainers__button--next">
+                  <svg aria-hidden="true" focusable="false" width="14" height="11">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <!--Нулевой слайд-->
+              <div class="swiper-slide trainers__slide">
+                <div class="trainers__card trainer">
+                  <div class="trainer__image">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/trainer-desktop-4.jpg" width="255" height="200">
+                      <source media="(min-width: 768px)" srcset="img/trainer-tablet-3.jpg" height="200">
+                      <img src="img/trainer-mobile-3.jpg" alt="Фото Федора Кайгородова" width="290" height="200">
+                    </picture>
+                  </div>
+                  <div class="trainer__content">
+                    <!--Имя тренера и иконка ВК-->
+                    <div class="trainer__info">
+                      <!--Локация с иконкой-->
+                      <span class="trainer__name">Федор Кайгородов</span>
+                      <div class="trainer__vk">
+                        <a class="trainer__link">
+                          <svg class="trainer__icon" aria-hidden="true" focusable="false" width="14" height="8">
+                            <use xlink:href="img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="trainer__description">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                  </div>
+                </div>
+              </div>
+              <!--Первый слайд-->
+              <div class="swiper-slide trainers__slide">
+                <div class="trainers__card trainer">
+                  <div class="trainer__image">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/trainer-desktop-1.jpg" width="255" height="200">
+                      <source media="(min-width: 768px)" srcset="img/trainer-tablet-1.jpg" height="200">
+                      <img src="img/trainer-mobile-3.jpg" alt="Фото Александра Прокофьева" width="290" height="200">
+                    </picture>
+                  </div>
+                  <div class="trainer__content">
+                    <!--Имя тренера и иконка ВК-->
+                    <div class="trainer__info">
+                      <!--Локация с иконкой-->
+                      <span class="trainer__name">Александр Прокофьев</span>
+                      <div class="trainer__vk">
+                        <a class="trainer__link">
+                          <svg class="trainer__icon" aria-hidden="true" focusable="false" width="14" height="8">
+                            <use xlink:href="img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="trainer__description">Строгий и внимательный инструктор, весёлый и&nbsp;общительный человек. Любит природу.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Второй слайд-->
+              <div class="swiper-slide trainers__slide">
+                <div class="trainers__card trainer">
+                  <div class="trainer__image">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/trainer-desktop-2.jpg" width="255" height="200">
+                      <source media="(min-width: 768px)" srcset="img/trainer-tablet-2.jpg" height="200">
+                      <img src="img/trainer-mobile-3.jpg" alt="Фото Светланы Афиногеновой" width="290" height="200">
+                    </picture>
+                  </div>
+                  <div class="trainer__content">
+                    <!--Имя тренера и иконка ВК-->
+                    <div class="trainer__info">
+                      <!--Локация с иконкой-->
+                      <span class="trainer__name">Светлана Афиногенова</span>
+                      <div class="trainer__vk">
+                        <a class="trainer__link">
+                          <svg class="trainer__icon" aria-hidden="true" focusable="false" width="14" height="8">
+                            <use xlink:href="img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="trainer__description">Видеть мир вокруг, познавать его&nbsp;опасности, находить друг друга, становиться ближе, чувствовать — в&nbsp;этом назначение жизни.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Третий слайд-->
+              <div class="swiper-slide trainers__slide">
+                <div class="trainers__card trainer">
+                  <div class="trainer__image">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/trainer-desktop-3.jpg" width="255" height="200">
+                      <source media="(min-width: 768px)" srcset="img/trainer-tablet-3.jpg" height="200">
+                      <img src="img/trainer-mobile-3.jpg" alt="Фото Надежды Колесниченко" width="290" height="200">
+                    </picture>
+                  </div>
+                  <div class="trainer__content">
+                    <!--Имя тренера и иконка ВК-->
+                    <div class="trainer__info">
+                      <!--Локация с иконкой-->
+                      <span class="trainer__name">Надежда Колесниченко</span>
+                      <div class="trainer__vk">
+                        <a class="trainer__link">
+                          <svg class="trainer__icon" aria-hidden="true" focusable="false" width="14" height="8">
+                            <use xlink:href="img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="trainer__description">Участники говорят, что&nbsp;Надежда ответственная, приятная в общении, и&nbsp;в&nbsp;поездках с&nbsp;ней&nbsp;чувствуешь себя спокойно и уверенно.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Четвертый слайд-->
+              <div class="swiper-slide trainers__slide">
+                <div class="trainers__card trainer">
+                  <div class="trainer__image">
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/trainer-desktop-4.jpg" width="255" height="200">
+                      <source media="(min-width: 768px)" srcset="img/trainer-tablet-3.jpg" height="200">
+                      <img src="img/trainer-mobile-3.jpg" alt="Фото Федора Кайгородова" width="290" height="200">
+                    </picture>
+                  </div>
+                  <div class="trainer__content">
+                    <!--Имя тренера и иконка ВК-->
+                    <div class="trainer__info">
+                      <!--Локация с иконкой-->
+                      <span class="trainer__name">Федор Кайгородов</span>
+                      <div class="trainer__vk">
+                        <a class="trainer__link">
+                          <svg class="trainer__icon" aria-hidden="true" focusable="false" width="14" height="8">
+                            <use xlink:href="img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="trainer__description">Опыт походов: Ходит в походы с&nbsp;2001&nbsp;года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="training__process process">
+          <h3 class="title process__title">Процесс обучения</h3>
+          <ul class="process__list list-reset">
+            <li class="process__item">
+              <svg class="icon__process icon__process--map" aria-hidden="true" focusable="false" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <p class="process__text">Изучение спортивного туристского движения</p>
+              <div class="process__ellipse"></div>
+            </li>
+            <li class="process__item">
+              <svg class="icon__process icon__process--boots" aria-hidden="true" focusable="false" width="26" height="25">
+                <use xlink:href="img/sprite.svg#icon-boots"></use>
+              </svg>
+              <p class="process__text">Подготовка и&nbsp;техническое снаряжение в походах</p>
+              <div class="process__ellipse"></div>
+            </li>
+            <li class="process__item"></li>
+            <li class="process__item">
+              <svg class="icon__process icon__process--eco" aria-hidden="true" focusable="false" width="26" height="25">
+                <use xlink:href="img/sprite.svg#icon-eco"></use>
+              </svg>
+              <p class="process__text">Лекции по&nbsp;окружающей среде, экологии и гигиене</p>
+              <div class="process__ellipse"></div>
+            </li>
+            <li class="process__item">
+              <svg class="icon__process icon__process--mountain" aria-hidden="true" focusable="false" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-mountain"></use>
+              </svg>
+              <p class="process__text">Разъяснение сложности горных препятствий</p>
+              <div class="process__ellipse"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Секция О Нас-->
+      <section class="about">
+        <div class="about__image">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/about-desktop.png" width="808" height="474">
+            <source media="(min-width: 768px)" srcset="img/clouds-tablet.png" width="602" height="1364">
+            <img class="logo__image" src="img/clouds-mobile.png" alt="Фон облака и горы" width="171" height="595">
+          </picture>
+        </div>
+        <div class="about__container container">
+          <h2 class="title about__title">О нас</h2>
+          <ul class="about__list list-reset">
+            <li class="about__item">
+              <h3 class="about__item-title">История компании</h3>
+              <p class="about__description">В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя&nbsp;5&nbsp;лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__item-title">Наша цель</h3>
+              <p class="about__description">Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все&nbsp;ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Секция отзывы-->
+      <section class="reviews">
+        <div class="reviews__container container">
+          <!-- Slider main container -->
+          <div class="swiper reviews__slider">
+            <div class="reviews__title-buttons">
+              <h2 class="title reviews__title">Отзывы</h2>
+              <!-- If we need navigation buttons -->
+              <div class="reviews__arrows">
+                <div class="reviews__button reviews__button--prev">
+                  <svg aria-hidden="true" focusable="false" width="14" height="11">
+                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                  </svg>
+                </div>
+                <div class="reviews__button reviews__button--next">
+                  <svg aria-hidden="true" focusable="false" width="14" height="11">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper reviews__wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide reviews__card">
+                <div class="reviews__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/review-desktop-1.jpg" width="258" height="253">
+                    <source media="(min-width: 768px)" srcset="img/trainer-tablet-3.jpg" height="200">
+                    <img src="img/trainer-mobile-3.jpg" alt="Фото Федора Кайгородова" width="290" height="200">
+                  </picture>
+                </div>
+                <div class="reviews__info">
+                  <p class="reviews__text">Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы — настоящие эксперты — всему научили, все показали. Делились увлекательными историями о местах, людях, культуре места. С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
+                  <div class="reviews__person">
+                    <span class="reviews__name">Фролов Александр</span>
+                    <span class="reviews__age">38 лет, Москва</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide reviews__card">
+                <div class="reviews__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/review-desktop-1.jpg" width="258" height="253">
+                    <source media="(min-width: 768px)" srcset="img/trainer-tablet-3.jpg" height="200">
+                    <img src="img/trainer-mobile-3.jpg" alt="Фото Федора Кайгородова" width="290" height="200">
+                  </picture>
+                </div>
+                <div class="reviews__info">
+                  <p class="reviews__text">Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы — настоящие эксперты — всему научили, все показали. Делились увлекательными историями о местах, людях, культуре места. С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
+                  <div class="reviews__person">
+                    <span class="reviews__name">Фролов Александр</span>
+                    <span class="reviews__age">38 лет, Москва</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide reviews__card">
+                <div class="reviews__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/review-desktop-1.jpg" width="258" height="253">
+                    <source media="(min-width: 768px)" srcset="img/trainer-tablet-3.jpg" height="200">
+                    <img src="img/trainer-mobile-3.jpg" alt="Фото Федора Кайгородова" width="290" height="200">
+                  </picture>
+                </div>
+                <div class="reviews__info">
+                  <p class="reviews__text">Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы — настоящие эксперты — всему научили, все показали. Делились увлекательными историями о местах, людях, культуре места. С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
+                  <div class="reviews__person">
+                    <span class="reviews__name">Фролов Александр</span>
+                    <span class="reviews__age">38 лет, Москва</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
       </section>
       <main>
         <section class="intro">

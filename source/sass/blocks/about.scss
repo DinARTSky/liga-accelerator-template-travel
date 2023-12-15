@@ -1,0 +1,49 @@
+.about {
+  padding-bottom: 50px;
+}
+
+.about__image {
+  position: absolute;
+  z-index: -1;
+}
+
+.about__container {
+  padding-top: 23px;
+  padding-left: 735px;
+}
+
+.about__title {
+  position: relative;
+  margin-bottom: 56px;
+
+  &::after {
+    content: 'О нас';
+    font-size: 55px;
+    line-height: 55px;
+    opacity: 0.03;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.about__item-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.about__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}

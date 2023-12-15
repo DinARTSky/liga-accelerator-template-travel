@@ -16,6 +16,10 @@ const initSwiperTours = new Swiper('.swiper-tours', {
   // Количество слайдов для показа
 
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      initialSlide: 3,
+    },
     768: {
       slidesPerView: 2,
       spaceBetween: 18,
@@ -29,7 +33,57 @@ const initSwiperTours = new Swiper('.swiper-tours', {
   },
 });
 
-export default initSwiper(); initSwiperTours();
+const initSwiperTrainers = new Swiper('.training__trainers', {
+  // Navigation arrows
+  navigation: {
+    nextEl: '.trainers__button--next',
+    prevEl: '.trainers__button--prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      initialSlide: 4,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      initialSlide: 2,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      initialSlide: 1,
+    },
+  },
+});
+
+const initSwiperReviews = new Swiper('.reviews__slider', {
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      initialSlide: 4,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      initialSlide: 2,
+    },
+    1440: {
+      slidesPerView: 1.5,
+      spaceBetween: 120,
+      initialSlide: 0,
+    },
+  },
+});
+
+export default initSwiper(); initSwiperTours(); initSwiperTrainers(); initSwiperReviews;
 
 
 /* const initSwiper = new Swiper('.swiper', {
