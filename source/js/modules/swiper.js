@@ -68,17 +68,14 @@ const initSwiperReviews = new Swiper('.reviews__slider', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      initialSlide: 4,
     },
     768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      initialSlide: 2,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
     },
     1440: {
-      slidesPerView: 1.5,
+      slidesPerView: 'auto',
       spaceBetween: 120,
-      initialSlide: 0,
     },
   },
 });
