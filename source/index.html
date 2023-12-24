@@ -1102,11 +1102,11 @@
 
       <!--Секция Контакты-->
       <section class="contacts">
-        <div class="contacts__wrapper container">
+        <div class="contacts__wrapper">
           <div class="contacts__info">
             <div class="contacts__title-description">
               <h2 class=" title contacts__title">Контакты</h2>
-              <p class="contacts__description">Свяжитесь с нами любым удобным для вас способом или&nbsp;приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+              <p class="contacts__description">Свяжитесь с нами любым удобным для&nbsp;вас способом или&nbsp;приходите к&nbsp;нам&nbsp;в&nbsp;гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
             </div>
             <div class="contacts__group">
               <div class="contacts__item">
@@ -1151,17 +1151,83 @@
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg" width="585" height="324">
                 <source media="(min-width: 768px)" srcset="img/map-tablet.jpg" width="768" height="340">
-                <img src="img/map-mobile.jpg" alt="Карта"  width="350" height="620">
+                <img src="img/map-mobile.jpg" alt="Карта"  width="350" height="320">
               </picture>
             </div>
             <div class="contacts__pin">
-              <svg aria-hidden="true" focusable="false" width="48" height="48">
+              <svg class="contacts__icon-map-pin" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-map-pin"></use>
               </svg>
             </div>
           </div>
         </div>
       </section>
+
+      <!--футер-->
+      <footer class="footer">
+        <div class="footer__container container">
+          <nav class="navigation">
+            <div class="footer__logo-container">
+              <a class="logo" href="index.html" aria-current="page">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/svg/logo-footer-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/svg/logo-footer-desktop.svg">
+                  <img class="logo__image" src="img/svg/logo-footer-mobile.svg" alt="логотип" width="142" height="42">
+                </picture>
+              </a>
+            </div>
+
+            <ul class="navigation__list list-reset">
+              <li class="navigation__item">
+                <a class="navigation__link" href="tours.html">Туры</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="training.html">Обучение</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#about">О нас</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#feedback">Отзывы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#photogallery">Фотографии</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <span class="navigation__phone">8 800 725-32-32</span>
+          </nav>
+          <div class="navigation__social-policy">
+            <ul class="social__list list-reset">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon--vk" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-vk-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon--ok" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon--reddit" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a href="" class="footer_policy">Политика конфиденциальности</a>
+          </div>
+
+        </div>
+      </footer>
 
       <main>
         <section class="intro">
