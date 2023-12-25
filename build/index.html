@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="header-hero">
+      <div class="header-hero" data-test=”hero”>
         <header class="header">
           <nav class="navigation">
             <button class="btn navigation__toggle" type="button">
@@ -198,7 +198,7 @@
       </div>
 
       <!--Секция Ближайшие туры-->
-      <section class="tours container">
+      <section class="tours container" data-test=”tours”>
 
         <!-- Slider main container -->
         <div class="swiper swiper-tours">
@@ -472,7 +472,7 @@
       </section>
 
       <!--Секция обучение-->
-      <section class="training">
+      <section class="training" data-test=”training”>
         <!--Фон горы и облака-->
         <div class="training__clouds">
           <picture>
@@ -695,7 +695,7 @@
       </section>
 
       <!--Секция О Нас-->
-      <section class="about">
+      <section class="about" data-test=”about”>
         <div class="about__image">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/about-desktop.png" width="808" height="474">
@@ -719,7 +719,7 @@
       </section>
 
       <!--Секция отзывы-->
-      <section class="reviews">
+      <section class="reviews" data-test=”reviews”>
         <div class="reviews__container container">
           <!-- Slider main container -->
           <div class="swiper reviews__slider">
@@ -834,8 +834,9 @@
           </div>
        </div>
       </section>
+
       <!--Секция преимущества-->
-      <section class="advantages">
+      <section class="advantages" data-test=”adv”>
         <h2 class="advantages__title title">Преимущества</h2>
         <!-- Slider main container -->
         <div class="swiper advantages__slider">
@@ -972,7 +973,7 @@
       </section>
 
       <!--Секция Фотогалерея-->
-      <section class="gallery">
+      <section class="gallery" data-test=”gallery”>
         <h2 class="title gallery__title">Фотогалерея</h2>
         <!-- Slider main container -->
         <div class="swiper gallery__slider">
@@ -1077,7 +1078,7 @@
       </section>
 
       <!--Сеуция обратная связь-->
-      <section class="feedback">
+      <section class="feedback" data-test=”form”>
         <div class="feedback__image">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/feedback-desktop.jpg" width="1440" height="760">
@@ -1101,133 +1102,135 @@
       </section>
 
       <!--Секция Контакты-->
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <div class="contacts__info">
-            <div class="contacts__title-description">
-              <h2 class=" title contacts__title">Контакты</h2>
-              <p class="contacts__description">Свяжитесь с нами любым удобным для&nbsp;вас способом или&nbsp;приходите к&nbsp;нам&nbsp;в&nbsp;гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
-            </div>
-            <div class="contacts__group">
-              <div class="contacts__item">
-                <div class="contacts__icon-wrapper">
-                  <svg class="contacts__icon" aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
-                  </svg>
+      <div class="contacts-footer" data-test=”footer”>
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <div class="contacts__info">
+              <div class="contacts__title-description">
+                <h2 class=" title contacts__title">Контакты</h2>
+                <p class="contacts__description">Свяжитесь с нами любым удобным для&nbsp;вас способом или&nbsp;приходите к&nbsp;нам&nbsp;в&nbsp;гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+              </div>
+              <div class="contacts__group">
+                <div class="contacts__item">
+                  <div class="contacts__icon-wrapper">
+                    <svg class="contacts__icon" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__item-text">
+                    <h3 class="contacts__item-title">Телефон</h3>
+                    <p class="contacts__item-description">+7 983 745-45-45</p>
+                  </div>
                 </div>
-                <div class="contacts__item-text">
-                  <h3 class="contacts__item-title">Телефон</h3>
-                  <p class="contacts__item-description">+7 983 745-45-45</p>
+
+                <div class="contacts__item">
+                  <div class="contacts__icon-wrapper">
+                    <svg class="contacts__icon" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__item-text">
+                    <h3 class="contacts__item-title">Email</h3>
+                    <p class="contacts__item-description">info@lifetour.com</p>
+                  </div>
+                </div>
+
+                <div class="contacts__item">
+                  <div class="contacts__icon-wrapper">
+                    <svg class="contacts__icon" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#icon-contacts-pin"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__item-text">
+                    <h3 class="contacts__item-title">Адрес</h3>
+                    <p class="contacts__item-description">г. Москва, пр-т Мира, д. 14, офис 101</p>
+                  </div>
                 </div>
               </div>
-
-              <div class="contacts__item">
-                <div class="contacts__icon-wrapper">
-                  <svg class="contacts__icon" aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-mail"></use>
-                  </svg>
-                </div>
-                <div class="contacts__item-text">
-                  <h3 class="contacts__item-title">Email</h3>
-                  <p class="contacts__item-description">info@lifetour.com</p>
-                </div>
-              </div>
-
-              <div class="contacts__item">
-                <div class="contacts__icon-wrapper">
-                  <svg class="contacts__icon" aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-contacts-pin"></use>
-                  </svg>
-                </div>
-                <div class="contacts__item-text">
-                  <h3 class="contacts__item-title">Адрес</h3>
-                  <p class="contacts__item-description">г. Москва, пр-т Мира, д. 14, офис 101</p>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="contacts__map">
-            <div class="contacts__image">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg" width="585" height="324">
-                <source media="(min-width: 768px)" srcset="img/map-tablet.jpg" width="768" height="340">
-                <img src="img/map-mobile.jpg" alt="Карта"  width="350" height="320">
-              </picture>
-            </div>
-            <div class="contacts__pin">
-              <svg class="contacts__icon-map-pin" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-map-pin"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--футер-->
-      <footer class="footer">
-        <div class="footer__container container">
-          <nav class="navigation">
-            <div class="footer__logo-container">
-              <a class="logo" href="index.html" aria-current="page">
+            <div class="contacts__map">
+              <div class="contacts__image">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/svg/logo-footer-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/svg/logo-footer-desktop.svg">
-                  <img class="logo__image" src="img/svg/logo-footer-mobile.svg" alt="логотип" width="142" height="42">
+                  <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg" width="585" height="324">
+                  <source media="(min-width: 768px)" srcset="img/map-tablet.jpg" width="768" height="340">
+                  <img src="img/map-mobile.jpg" alt="Карта"  width="350" height="320">
                 </picture>
-              </a>
+              </div>
+              <div class="contacts__pin">
+                <svg class="contacts__icon-map-pin" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--футер-->
+        <footer class="footer">
+          <div class="footer__container container">
+            <nav class="navigation">
+              <div class="footer__logo-container">
+                <a class="logo" href="index.html" aria-current="page">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/svg/logo-footer-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/svg/logo-footer-desktop.svg">
+                    <img class="logo__image" src="img/svg/logo-footer-desktop.svg" alt="логотип" width="142" height="42">
+                  </picture>
+                </a>
+              </div>
+
+              <ul class="navigation__list list-reset">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="tours.html">Туры</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="training.html">Обучение</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#about">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#feedback">Отзывы</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#photogallery">Фотографии</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+              <span class="navigation__phone">8 800 725-32-32</span>
+            </nav>
+            <div class="navigation__social-policy">
+              <ul class="social__list list-reset">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon--vk" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#icon-vk-footer"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon--ok" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#icon-ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon--reddit" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite.svg#icon-reddit"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a href="" class="footer_policy">Политика конфиденциальности</a>
             </div>
 
-            <ul class="navigation__list list-reset">
-              <li class="navigation__item">
-                <a class="navigation__link" href="tours.html">Туры</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="training.html">Обучение</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#about">О нас</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#feedback">Отзывы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#photogallery">Фотографии</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-            <span class="navigation__phone">8 800 725-32-32</span>
-          </nav>
-          <div class="navigation__social-policy">
-            <ul class="social__list list-reset">
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg class="social__icon--vk" aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-vk-footer"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg class="social__icon--ok" aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-ok"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg class="social__icon--reddit" aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-reddit"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <a href="" class="footer_policy">Политика конфиденциальности</a>
           </div>
-
-        </div>
-      </footer>
+        </footer>
+    </div>
 
       <main>
         <section class="intro">

@@ -4563,8 +4563,8 @@ button,
 }
 @media (max-width: 767px) {
   .contacts {
-    padding-top: 45px;
-    padding-bottom: 30px;
+    padding-top: 46px;
+    padding-bottom: 39px;
   }
 }
 
@@ -4858,9 +4858,15 @@ button,
 }
 
 .footer {
-  padding-top: 32px;
+  padding-top: 30px;
   padding-bottom: 118px;
   border-top: 1px solid rgba(45, 56, 63, 0.2);
+}
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 19px;
+    padding-bottom: 118px;
+  }
 }
 
 .footer .navigation {
@@ -4872,10 +4878,27 @@ button,
 }
 @media (max-width: 1439px) {
   .footer .navigation {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 40px;
+    gap: 42px;
+    margin-bottom: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .footer .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 22px;
+    margin-bottom: 23px;
   }
 }
 
@@ -4885,6 +4908,17 @@ button,
 @media (max-width: 1439px) {
   .footer__logo-container {
     padding: 0;
+    padding-top: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -4897,28 +4931,87 @@ button,
     display: -ms-flexbox;
     display: flex;
     padding: 0;
+    padding-top: 2px;
     padding-right: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .footer .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px;
+    padding: 0;
+    height: 72px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .footer .navigation__item {
   margin: 0;
 }
+@media (max-width: 767px) {
+  .footer .navigation__item {
+    width: 120px;
+    height: 14px;
+  }
+}
+
+.footer .navigation__item:nth-child(1) {
+  margin-right: 23px;
+}
+@media (max-width: 767px) {
+  .footer .navigation__item:nth-child(1) {
+    margin: 0;
+  }
+}
 
 .footer .navigation__item:nth-child(2) {
-  margin-right: 24px;
+  margin-right: 25px;
+}
+@media (max-width: 767px) {
+  .footer .navigation__item:nth-child(2) {
+    margin: 0;
+  }
 }
 
 .footer .navigation__item:nth-child(3) {
   margin-right: 24px;
 }
+@media (max-width: 767px) {
+  .footer .navigation__item:nth-child(3) {
+    margin: 0;
+  }
+}
 
 .footer .navigation__item:nth-child(4) {
-  margin-right: 25px;
+  margin-right: 24px;
+}
+@media (max-width: 767px) {
+  .footer .navigation__item:nth-child(4) {
+    margin: 0;
+  }
 }
 
 .footer .navigation__item:nth-child(5) {
   margin-right: 26px;
+}
+@media (max-width: 767px) {
+  .footer .navigation__item:nth-child(5) {
+    margin: 0;
+  }
 }
 
 .footer .navigation__link {
@@ -4928,6 +5021,16 @@ button,
   .footer .navigation__link {
     font-size: 14px;
     line-height: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .footer .navigation__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -4950,6 +5053,17 @@ button,
   gap: 15px;
   margin-bottom: 22px;
 }
+@media (max-width: 1439px) {
+  .social__list {
+    gap: 16px;
+    margin-bottom: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .social__list {
+    margin-bottom: 23px;
+  }
+}
 
 .social__link {
   display: -webkit-box;
@@ -4964,6 +5078,11 @@ button,
   width: 30px;
   height: 30px;
   border: 1px solid rgba(45, 56, 63, 0.2);
+}
+@media (max-width: 1439px) {
+  .social__link {
+    width: 32px;
+  }
 }
 
 .social__icon--vk {

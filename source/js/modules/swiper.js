@@ -8,6 +8,7 @@ const initSwiper = new Swiper('.hero__slider', {
 });
 
 const initSwiperTours = new Swiper('.swiper-tours', {
+  loop: true,
   // Navigation arrows
   navigation: {
     nextEl: '.tours__button--next',
@@ -59,6 +60,7 @@ const initSwiperTrainers = new Swiper('.training__trainers', {
 });
 
 const initSwiperReviews = new Swiper('.reviews__slider', {
+  loop: true,
   // Navigation arrows
   navigation: {
     nextEl: '.reviews__button--next',
