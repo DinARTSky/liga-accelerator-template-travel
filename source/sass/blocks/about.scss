@@ -1,9 +1,11 @@
 .about {
-  padding-bottom: 50px;
+  padding-top: 56px;
+  padding-bottom: 81px;
   position: relative;
 
   @include vp-1439 {
-    padding-bottom: 30px;
+    padding-top: 8px;
+    padding-bottom: 3px;
   }
 
   @include vp-767 {
@@ -16,7 +18,7 @@
   z-index: -1;
 
   @include vp-1439 {
-    top: 65px;
+    top: 60px;
   }
 
   @include vp-767 {
@@ -30,6 +32,7 @@
   padding-left: 735px;
 
   @include vp-1439 {
+    padding-top: 10px;
     padding-left: 453px;
   }
 

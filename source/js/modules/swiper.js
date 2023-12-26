@@ -8,7 +8,6 @@ const initSwiper = new Swiper('.hero__slider', {
 });
 
 const initSwiperTours = new Swiper('.swiper-tours', {
-  loop: true,
   // Navigation arrows
   navigation: {
     nextEl: '.tours__button--next',
@@ -20,11 +19,13 @@ const initSwiperTours = new Swiper('.swiper-tours', {
     320: {
       slidesPerView: 1,
       initialSlide: 3,
+      loop: true,
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 18,
       initialSlide: 2,
+      loop: true,
     },
     1440: {
       slidesPerView: 3,
@@ -50,6 +51,7 @@ const initSwiperTrainers = new Swiper('.training__trainers', {
       slidesPerView: 3,
       spaceBetween: 20,
       initialSlide: 2,
+      loop: true,
     },
     1440: {
       slidesPerView: 4,
