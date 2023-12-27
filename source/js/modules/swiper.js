@@ -24,7 +24,7 @@ const initSwiperTours = new Swiper('.swiper-tours', {
     768: {
       slidesPerView: 2,
       spaceBetween: 18,
-      initialSlide: 0,
+      initialSlide: 1,
       loop: true,
     },
     1440: {
@@ -48,10 +48,10 @@ const initSwiperTrainers = new Swiper('.training__trainers', {
       initialSlide: 3,
     },
     768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      initialSlide: 1,
       loop: true,
+      slidesPerView: 3,
+      initialSlide: 1,
+      spaceBetween: 20,
     },
     1440: {
       slidesPerView: 4,
@@ -107,7 +107,7 @@ const initSwiperAdvantages = new Swiper('.advantages__slider', {
 });
 
 // сначала пишем необходимый брейкпоинт
-let desktop = window.matchMedia('(min-width: 1440px)'); // сами подберите нужный брейкпоинт
+/*let desktop = window.matchMedia('(min-width: 1440px)'); // сами подберите нужный брейкпоинт
 
 if (desktop.matches) {
   const initSwiperAdvantages = new Swiper('.advantages__slider', {
@@ -135,6 +135,7 @@ if (desktop.matches) {
 // если слайдер не в брейкпоинте
   swiper.destroy(); // то уничтожаем его
 }
+*/
 
 const initSwiperGallery = new Swiper('.gallery__slider', {
   // Navigation arrows
