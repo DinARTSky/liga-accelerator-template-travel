@@ -60,20 +60,6 @@
   }
 }
 
-.tours__slide {
-  @include vp-1439 {
-    &:nth-last-child(1) {
-      order: -2;
-    }
-  }
-
-  @include vp-767 {
-    &:nth-child(2) {
-      order: 2;
-    }
-  }
-}
-
 .tours__button {
   width: 37px;
   height: 35px;

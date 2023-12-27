@@ -18,13 +18,13 @@ const initSwiperTours = new Swiper('.swiper-tours', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      initialSlide: 3,
+      initialSlide: 1,
       loop: true,
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 18,
-      initialSlide: 2,
+      initialSlide: 0,
       loop: true,
     },
     1440: {
@@ -45,12 +45,12 @@ const initSwiperTrainers = new Swiper('.training__trainers', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      initialSlide: 4,
+      initialSlide: 3,
     },
     768: {
       slidesPerView: 3,
       spaceBetween: 20,
-      initialSlide: 2,
+      initialSlide: 1,
       loop: true,
     },
     1440: {

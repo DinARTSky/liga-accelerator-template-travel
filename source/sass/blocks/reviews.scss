@@ -3,8 +3,8 @@
   padding-bottom: 0;
 
   @include vp-1439 {
-    padding-top: 33px;
-    padding-bottom: 37px;
+    padding-top: 21px;
+    padding-bottom: 23px;
   }
 }
 
@@ -145,7 +145,7 @@
     gap: 10px;
     font-size: 12px;
     line-height: 18px;
-    margin: 4px 0 26px;
+    margin: 3px 0 26px;
   }
 
   @include vp-767 {
