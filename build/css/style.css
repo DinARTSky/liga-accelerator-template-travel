@@ -3858,14 +3858,14 @@ button,
   .advantages {
     padding: 45px;
     padding-top: 68px;
-    padding-bottom: 44px;
+    padding-bottom: 25px;
   }
 }
 @media (max-width: 767px) {
   .advantages {
     padding: 15px;
-    padding-top: 40px;
-    padding-bottom: 47px;
+    padding-top: 46px;
+    padding-bottom: 21px;
   }
 }
 
@@ -3893,6 +3893,7 @@ button,
 @media (max-width: 767px) {
   .advantages__title {
     margin-bottom: 20px;
+    margin-left: 1px;
   }
 }
 .advantages__title::after {
@@ -4315,7 +4316,7 @@ button,
 }
 @media (max-width: 1439px) {
   .gallery {
-    padding-top: 19px;
+    padding-top: 18px;
     padding-bottom: 0;
   }
 }
@@ -4365,7 +4366,8 @@ button,
   .gallery__title::after {
     font-size: 40px;
     line-height: 48.76px;
-    margin-left: -1px;
+    margin-left: 0;
+    bottom: -7px;
   }
 }
 @media (max-width: 767px) {

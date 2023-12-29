@@ -5,8 +5,9 @@ import {initSwiperHero} from './modules/sliders/hero';
 import {initSwiperTours} from './modules/sliders/tours';
 import {initSwiperTrainers} from './modules/sliders/trainers';
 import {initSwiperReviews} from './modules/sliders/reviews';
-import {initSwiperAdvantages} from './modules/sliders/advantages';
 import {initSwiperGallery} from './modules/sliders/gallery';
+import {initSwiperAdvantages} from './modules/sliders/advantages';
+
 
 // ---------------------------------
 
@@ -20,8 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initSwiperTours();
   initSwiperTrainers();
   initSwiperReviews();
-  initSwiperAdvantages();
   initSwiperGallery();
+  initSwiperAdvantages();
 
   // Modules
   // ---------------------------------
