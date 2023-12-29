@@ -1,7 +1,13 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initSwiper} from './modules/swiper';
+import {initSwiperHero} from './modules/sliders/hero';
+import {initSwiperTours} from './modules/sliders/tours';
+import {initSwiperTrainers} from './modules/sliders/trainers';
+import {initSwiperReviews} from './modules/sliders/reviews';
+import {initSwiperAdvantages} from './modules/sliders/advantages';
+import {initSwiperGallery} from './modules/sliders/gallery';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -10,7 +16,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  initSwiper();
+  initSwiperHero();
+  initSwiperTours();
+  initSwiperTrainers();
+  initSwiperReviews();
+  initSwiperAdvantages();
+  initSwiperGallery();
 
   // Modules
   // ---------------------------------
